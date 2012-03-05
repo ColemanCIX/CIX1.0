@@ -18,11 +18,25 @@ namespace NewsFeedInput
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string[] filePaths = Directory.GetFiles(@"C:\Users\Student3\Desktop\NewsWriter\datafiles", "*.xml");
-            string[] fileNames = filePaths;
+            //headerTag.InnerHtml = Server.MapPath("~");
+            string[] filePaths;
+            string[] fileNames;
+
+            try
+            {
+                filePaths = Directory.GetFiles(Server.MapPath("~") + "datafiles", "*.xml");
+                fileNames = filePaths;
+            }
+            catch (Exception error)
+            {
+                headerTag.InnerHtml = "Oh on! Error: " + error.Message;
+                filePaths = new string[0];
+                fileNames = new string[0];
+            }
+
             if (IsPostBack)
             {
-                if (drpChannels.SelectedIndex < 0 || txtHeadline.Text == "" || txtHeadline.Text.Length > 85 || txtDescription.Text == "" || txtDescription.Text.Length > 50)
+                if (drpChannels.SelectedIndex < 0 || txtHeadline.Text == "" || txtHeadline.Text.Length > 50 || txtDescription.Text == "" || txtDescription.Text.Length > 85)
                 {
                     headerTag.InnerHtml = "Coleman University<br />There Are Errors In Your Article!";
 
@@ -34,6 +48,7 @@ namespace NewsFeedInput
                     {
                         lblChannelError.Text = "";
                     }
+
                     if (txtHeadline.Text == "")
                     {
                         lblTitleError.Text = "The headline is required!";
@@ -46,18 +61,21 @@ namespace NewsFeedInput
                     {
                         lblTitleError.Text = "";
                     }
+
                     if (txtDescription.Text == "")
                     {
                         lblDescriptionError.Text = "The description is required!";
                     }
-                    else if (txtDescription.Text.Length > 85)
+                    else if (txtDescription.Text.Length > 100)
                     {
-                        lblDescriptionError.Text = "The Description id too long!";
+                        lblDescriptionError.Text = "The Description is too long!";
                     }
                     else
                     {
                         lblDescriptionError.Text = "";
                     }
+
+                    drpChannels.SelectedIndex = drpChannels.SelectedIndex;
                 }
                 else
                 {

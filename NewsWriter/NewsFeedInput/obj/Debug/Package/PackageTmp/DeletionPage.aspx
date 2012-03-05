@@ -20,7 +20,7 @@
     <div class="app">
         <div class="header">
             <img src="Images/logo.png" alt="Coleman Logo" />
-            <h1 runat="server" id="headerTag">Coleman University<br />Welcome to the News Writer!</h1>
+            <h1 runat="server" id="headerTag">Coleman University<br />Welcome to the CIX News Writer!</h1>
         </div>
         <form id="form1" runat="server">
         <div class="siteMap">
@@ -41,18 +41,20 @@
                     and that article will be gone forever.
                 </p>
             </div>
-            <p>
-                <asp:Label ID="lblChannels" runat="server" Text="Select Channel: " />
-                <asp:DropDownList ID="drpChannels" runat="server" AutoPostBack="True" OnSelectedIndexChanged="drpChannels_SelectedIndexChanged" />
-            </p>
-            <p>
-                <asp:Label ID="lblIntro" runat="server" Text="Select an Item to Delete:" /></p>
-            <p>
-                <asp:ListBox ID="listItems" runat="server" Height="150px" Width="200px" />
-            </p>
-            <p>
-                <asp:Button ID="btnDelete" runat="server" Text="Delete" OnClick="btnDelete_Click" onmousedown="pressed()" onmouseup="released()" onmouseout="released()"/>
-            </p>
+            <div class="stuff">
+                <p>
+                    <asp:Label ID="lblChannels" runat="server" Text="Select Channel: " />
+                    <asp:DropDownList ID="drpChannels" runat="server" AutoPostBack="True" OnSelectedIndexChanged="drpChannels_SelectedIndexChanged" />
+                </p>
+                <p>
+                    <asp:Label ID="lblIntro" runat="server" Text="Select an Item to Delete:" /></p>
+                <p>
+                    <asp:ListBox ID="listItems" runat="server" Height="150px" Width="200px" />
+                </p>
+                <p>
+                    <asp:Button ID="btnDelete" runat="server" Text="Delete" OnClick="btnDelete_Click" onmousedown="pressed()" onmouseup="released()" onmouseout="released()"/>
+                </p>
+            </div>
         </div>
         </form>
     </div>

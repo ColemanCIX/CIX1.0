@@ -20,7 +20,7 @@
     <div class="app">
         <div class="header">
             <img src="Images/logo.png" alt="Coleman Logo" />
-            <h1 runat="server" id="headerTag">Coleman University<br />Welcome to the News Writer!</h1>
+            <h1 runat="server" id="headerTag">Coleman University<br />Welcome to the CIX News Writer!</h1>
         </div>
         <form id="form1" runat="server">
         <div class="siteMap">
@@ -41,32 +41,35 @@
                     <br />
                     The headline will be the title of your news<br />
                     article. The description will be the body.<br />
+                    The description should be brief and under<br />
+                    a hundred characters<br />
                     <br />
                     When you are done writing your news article<br />
                     click the Publish button. 
 
                </p>
             </div>
-            <p>
-                <asp:Label ID="lblChannels" runat="server" Text="Select Channel: " />
-                <asp:DropDownList ID="drpChannels" runat="server" /><br />
-                <asp:Label ID="lblChannelError" runat="server" Text="" />
-            </p>
-            <p>
-                <asp:Label ID="lblHeadline" runat="server" Text="Article Headline:" />
-                <asp:TextBox ID="txtHeadline" runat="server" /><br />
-                <asp:Label ID="lblTitleError" runat="server" Text="" />
-            </p>
-            <p>
-                <asp:Label ID="lblDescription" runat="server" Text="Article Description:" />
-                <br />
-                <asp:TextBox ID="txtDescription" runat="server" TextMode="MultiLine" /><br />
-                <asp:Label ID="lblDescriptionError" runat="server" Text=""/>
-            </p>
-            <p>
-                <asp:Button ID="btnSubmit" runat="server" Text="Publish" onmousedown="pressed()" onmouseup="released()" onmouseout="released()" />
-            </p>
-            
+            <div class="stuff">
+                <p>
+                    <asp:Label ID="lblChannels" runat="server" Text="Select Channel: " />
+                    <asp:DropDownList ID="drpChannels" runat="server" /><br />
+                    <asp:Label ID="lblChannelError" runat="server" Text="" />
+                </p>
+                <p>
+                    <asp:Label ID="lblHeadline" runat="server" Text="Article Headline:" />
+                    <asp:TextBox ID="txtHeadline" runat="server" /><br />
+                    <asp:Label ID="lblTitleError" runat="server" Text="" />
+                </p>
+                <p>
+                    <asp:Label ID="lblDescription" runat="server" Text="Article Description:" />
+                    <br />
+                    <asp:TextBox ID="txtDescription" runat="server" TextMode="MultiLine" /><br />
+                    <asp:Label ID="lblDescriptionError" runat="server" Text=""/>
+                </p>
+                <p>
+                    <asp:Button ID="btnSubmit" runat="server" Text="Publish" onmousedown="pressed()" onmouseup="released()" onmouseout="released()" />
+                </p>
+            </div>
         </div>
         </form>
     </div>

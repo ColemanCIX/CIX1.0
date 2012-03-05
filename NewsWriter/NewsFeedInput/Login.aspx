@@ -20,7 +20,7 @@
     <div class="app">
         <div class="header">
             <img src="Images/logo.png" alt="Coleman Logo" />
-            <h1 runat="server" id="headerTag">Coleman University<br />Welcome to the News Writer!</h1>
+            <h1 runat="server" id="headerTag">Coleman University<br />Welcome to the CIX News Writer!</h1>
         </div>
         <form id="form1" runat="server">
             <div class="content">

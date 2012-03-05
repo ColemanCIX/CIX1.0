@@ -30,8 +30,8 @@ namespace NewsFeedInput
 
         private void populateBoxes()
         {
-            string[] filePaths = Directory.GetFiles(@"C:\Users\Student3\Desktop\NewsWriter\datafiles", "*.xml");
-            string[] fileNames = Directory.GetFiles(@"C:\Users\Student3\Desktop\NewsWriter\datafiles", "*.xml");
+            string[] filePaths = Directory.GetFiles(Server.MapPath("~") + "datafiles", "*.xml");
+            string[] fileNames = Directory.GetFiles(Server.MapPath("~") + "datafiles", "*.xml");
             for (int i = 0; i < fileNames.Length; i++)
             {
                 fileNames[i] = Path.GetFileNameWithoutExtension(fileNames[i]);
@@ -52,8 +52,9 @@ namespace NewsFeedInput
         {
             try
             {
-                string[] filePaths = Directory.GetFiles(@"C:\Users\Student3\Desktop\NewsWriter\datafiles", "*.xml");
+                string[] filePaths = Directory.GetFiles(Server.MapPath("~") + "datafiles", "*.xml");
                 XDocument feed = XDocument.Load(filePaths[drpChannels.SelectedIndex]);
+                int index = drpChannels.SelectedIndex;
                 if (feed.Element("rss").Element("channel").Elements("item").ElementAtOrDefault(listItems.SelectedIndex).Element("title").Value == listItems.SelectedItem.Value)
                 {
                     feed.Element("rss").Element("channel").Elements("item").ElementAtOrDefault(listItems.SelectedIndex).Remove();
@@ -64,6 +65,8 @@ namespace NewsFeedInput
                     headerTag.InnerHtml = "Coleman Universty<br />That article was already deleted";
                 }
                 populateBoxes();
+                drpChannels.SelectedIndex = index;
+                PopulateList();
             }
             catch (NullReferenceException)
             {
@@ -77,9 +80,14 @@ namespace NewsFeedInput
 
         protected void drpChannels_SelectedIndexChanged(object sender, EventArgs e)
         {
+            PopulateList();
+        }
+
+        private void PopulateList()
+        {
             try
             {
-                string[] filePaths = Directory.GetFiles(@"C:\Users\Student3\Desktop\NewsWriter\datafiles", "*.xml");
+                string[] filePaths = Directory.GetFiles(Server.MapPath("~") + "datafiles", "*.xml");
                 listItems.Items.Clear();
                 XDocument feed = XDocument.Load(filePaths[drpChannels.SelectedIndex]);
                 List<XElement> items = feed.Element("rss").Element("channel").Elements("item").ToList();

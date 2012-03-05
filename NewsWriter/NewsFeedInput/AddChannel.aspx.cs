@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml.Linq;
+using System.Text.RegularExpressions;
 
 namespace NewsFeedInput
 {
@@ -12,19 +13,25 @@ namespace NewsFeedInput
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Regex noSpecChar = new Regex(@"^[a-zA-Z0-9_\s-]+$");
             if (IsPostBack)
             {
-                if (txtTitle.Text == "" || txtDescription.Text == "")
+                if (txtTitle.Text == "" || txtDescription.Text == "" || !(noSpecChar.IsMatch(txtTitle.Text)))
                 {
                     headerTag.InnerHtml = "Coleman University<br />There Are Errors In Your Channel";
                     if (txtTitle.Text == "")
                     {
                         lblTitleError.Text = "The title is required!";
                     }
+                    else if(!(noSpecChar.IsMatch(txtTitle.Text)))
+                    {
+                        lblTitleError.Text = "There are illegal characters in your title";
+                    }
                     else
                     {
                         lblTitleError.Text = "";
                     }
+
                     if (txtDescription.Text == "")
                     {
                         lblDescriptionError.Text = "The description is required!";
@@ -47,9 +54,9 @@ namespace NewsFeedInput
                                     new XElement("title", new XCData(txtTitle.Text)),
                                     new XElement("link", ""),
                                     new XElement("description", new XCData(txtDescription.Text)))));
-                        feed.Save(@"C:\Users\Student3\Desktop\NewsWriter\datafiles\" + txtTitle.Text + ".xml");
+                        feed.Save(Server.MapPath("~") + @"datafiles\" + txtTitle.Text + ".xml");
 
-                        headerTag.InnerHtml = "Coleman University<br />Congrats! You successfully made a new channel!";
+                        headerTag.InnerHtml = "Coleman University<br />Congrats! You made a new channel!";
                         txtTitle.Text = "";
                         txtDescription.Text = "";
                     }

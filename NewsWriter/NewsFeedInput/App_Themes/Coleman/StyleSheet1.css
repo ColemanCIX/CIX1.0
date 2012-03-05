@@ -47,6 +47,13 @@
     float:right;
 }
 
+/*
+.stuff
+{
+    float:left;
+}
+*/
+
 img
 {
     float:left;
@@ -104,6 +111,9 @@ li
     color:White;
     border: 2px solid #FFD700;
     border-radius: 50px;
+    width:80px;
+    height:30px;
+    /*float:right;*/
 }
 
 #btnDelete
@@ -112,6 +122,8 @@ li
     color:White;
     border: 2px solid #FFD700;
     border-radius: 50px;
+    width:80px;
+    height:30px;
 }
 
 #lblChannelError
