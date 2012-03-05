@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB2A5CC6-9A98-4DAA-B709-62AF15D4AD0C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ScreenSaver</RootNamespace>
+    <AssemblyName>ScreenSaver</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Input.Manipulations" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnalogClock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnalogClock.Designer.cs">
+      <DependentUpon>AnalogClock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ScreenSaverForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScreenSaverForm.Designer.cs">
+      <DependentUpon>ScreenSaverForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AnalogClock.resx">
+      <DependentUpon>AnalogClock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScreenSaverForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ScreenSaverForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ColemanHeader1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChanceOfRain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChanceOfStorm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cloudy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flurries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Haze.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MostlySunny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PartlyCloudy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sunny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThunderStorm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\campus_sd.jpg" />
+    <Content Include="Resources\CixLogo.png" />
+    <Content Include="Resources\transLogo.gif" />
+    <Content Include="Resources\TransparentHeader.gif" />
+    <Content Include="Resources\transparentLogo.jpg" />
+    <Content Include="Resources\water.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

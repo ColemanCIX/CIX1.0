@@ -1,0 +1,53 @@
+E:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.exe
+E:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.pdb
+C:\Users\Eddow\Desktop\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.exe
+C:\Users\Eddow\Desktop\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.pdb
+C:\Users\Eddow\Desktop\Current ScreenSaver\ScreenSaver\ScreenSaver\bin\Debug\ScreenSaver.exe
+C:\Users\Eddow\Desktop\Current ScreenSaver\ScreenSaver\ScreenSaver\bin\Debug\ScreenSaver.pdb
+C:\Users\Eddow\Desktop\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Eddow\Desktop\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.Properties.Resources.resources
+C:\Users\Eddow\Desktop\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.ScreenSaverForm.resources
+C:\Users\Eddow\Desktop\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.SettingsForm.resources
+C:\Users\Eddow\Desktop\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Eddow\Desktop\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\GenerateResource.write.1.tlog
+E:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\bin\Debug\ScreenSaver.exe
+E:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\bin\Debug\ScreenSaver.pdb
+E:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\ResolveAssemblyReference.cache
+E:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.Properties.Resources.resources
+E:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.ScreenSaverForm.resources
+E:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.SettingsForm.resources
+E:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\GenerateResource.read.1.tlog
+E:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\GenerateResource.write.1.tlog
+F:\COM 290\Versions of ScreenSaver\Iteration 3\Clock Attempt\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.exe
+F:\COM 290\Versions of ScreenSaver\Iteration 3\Clock Attempt\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.pdb
+F:\COM 290\Versions of ScreenSaver\Iteration 3\Clock Attempt\ScreenSaver\ScreenSaver\bin\Debug\ScreenSaver.exe
+F:\COM 290\Versions of ScreenSaver\Iteration 3\Clock Attempt\ScreenSaver\ScreenSaver\bin\Debug\ScreenSaver.pdb
+F:\COM 290\Versions of ScreenSaver\Iteration 3\Clock Attempt\ScreenSaver\ScreenSaver\obj\Debug\ResolveAssemblyReference.cache
+F:\COM 290\Versions of ScreenSaver\Iteration 3\Clock Attempt\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.Properties.Resources.resources
+F:\COM 290\Versions of ScreenSaver\Iteration 3\Clock Attempt\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.ScreenSaverForm.resources
+F:\COM 290\Versions of ScreenSaver\Iteration 3\Clock Attempt\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.SettingsForm.resources
+F:\COM 290\Versions of ScreenSaver\Iteration 3\Clock Attempt\ScreenSaver\ScreenSaver\obj\Debug\GenerateResource.read.1.tlog
+F:\COM 290\Versions of ScreenSaver\Iteration 3\Clock Attempt\ScreenSaver\ScreenSaver\obj\Debug\GenerateResource.write.1.tlog
+F:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\bin\Debug\ScreenSaver.exe
+F:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\bin\Debug\ScreenSaver.pdb
+F:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\ResolveAssemblyReference.cache
+F:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.Properties.Resources.resources
+F:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.ScreenSaverForm.resources
+F:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.SettingsForm.resources
+F:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\GenerateResource.read.1.tlog
+F:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\GenerateResource.write.1.tlog
+F:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.exe
+F:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.pdb
+F:\COM 290\ResolutionChange\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.exe
+F:\COM 290\ResolutionChange\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.pdb
+F:\COM 290\ResolutionChange\ScreenSaver\ScreenSaver\bin\Debug\ScreenSaver.exe
+F:\COM 290\ResolutionChange\ScreenSaver\ScreenSaver\bin\Debug\ScreenSaver.pdb
+F:\COM 290\ResolutionChange\ScreenSaver\ScreenSaver\obj\Debug\ResolveAssemblyReference.cache
+F:\COM 290\ResolutionChange\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.Properties.Resources.resources
+F:\COM 290\ResolutionChange\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.ScreenSaverForm.resources
+F:\COM 290\ResolutionChange\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.SettingsForm.resources
+F:\COM 290\ResolutionChange\ScreenSaver\ScreenSaver\obj\Debug\GenerateResource.read.1.tlog
+F:\COM 290\ResolutionChange\ScreenSaver\ScreenSaver\obj\Debug\GenerateResource.write.1.tlog
+F:\COM 290\ResolutionChange\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.AnalogClock.resources
+F:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.AnalogClock.resources
+E:\COM 290\Current ScreenSaver\ScreenSaver\ScreenSaver\obj\Debug\ScreenSaver.AnalogClock.resources
