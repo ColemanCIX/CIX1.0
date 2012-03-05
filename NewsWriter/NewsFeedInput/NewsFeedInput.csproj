@@ -60,6 +60,7 @@
     <Content Include="Images\101.png" />
     <Content Include="AddChannel.aspx" />
     <Content Include="App_Themes\Coleman\StyleSheet1.css" />
+    <Content Include="Images\CixLogo.png" />
     <Content Include="Images\Coleman_logo_2color.gif" />
     <Content Include="Images\CU_logo_stacked.jpg" />
     <Content Include="Default.aspx" />

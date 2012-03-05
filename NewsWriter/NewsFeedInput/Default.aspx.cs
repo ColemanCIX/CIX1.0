@@ -18,9 +18,9 @@ namespace NewsFeedInput
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //headerTag.InnerHtml = Server.MapPath("~");
             string[] filePaths;
             string[] fileNames;
+            lblError.ForeColor = System.Drawing.Color.Red;
 
             try
             {
@@ -29,7 +29,7 @@ namespace NewsFeedInput
             }
             catch (Exception error)
             {
-                headerTag.InnerHtml = "Oh on! Error: " + error.Message;
+                lblError.Text = "Oh on! Error: " + error.Message;
                 filePaths = new string[0];
                 fileNames = new string[0];
             }
@@ -38,7 +38,7 @@ namespace NewsFeedInput
             {
                 if (drpChannels.SelectedIndex < 0 || txtHeadline.Text == "" || txtHeadline.Text.Length > 50 || txtDescription.Text == "" || txtDescription.Text.Length > 85)
                 {
-                    headerTag.InnerHtml = "Coleman University<br />There Are Errors In Your Article!";
+                    lblError.Text = "There Are Errors In Your Article!";
 
                     if (drpChannels.SelectedIndex < 0)
                     {
@@ -79,6 +79,7 @@ namespace NewsFeedInput
                 }
                 else
                 {
+                    lblError.Text = "";
                     lblChannelError.Text = "";
                     lblTitleError.Text = "";
                     lblDescriptionError.Text = "";
@@ -130,13 +131,14 @@ namespace NewsFeedInput
                         feed.Save(filePaths[drpChannels.SelectedIndex]);
 
                         // Inform user of success
-                        headerTag.InnerHtml = "Coleman University<br />Congrats! You made a new article!";
+                        lblError.Text = "Congrats! You made a new article!";
+                        lblError.ForeColor = System.Drawing.Color.Lime;
                         txtHeadline.Text = "";
                         txtDescription.Text = "";
                     }
                     catch (Exception error)
                     {
-                        headerTag.InnerHtml = "Coleman University<br />Oh No!<br />Error: " + error.Message;
+                        lblError.Text = "Oh No!<br />Error: " + error.Message;
                     }
                 }
             }

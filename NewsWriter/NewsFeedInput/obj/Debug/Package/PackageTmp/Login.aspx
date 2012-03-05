@@ -23,6 +23,9 @@
             <h1 runat="server" id="headerTag">Coleman University<br />Welcome to the CIX News Writer!</h1>
         </div>
         <form id="form1" runat="server">
+            <div class="response">   
+                <asp:Label ID="lblError" runat="server" Text="" Font-Bold="true" Font-Size="Large"/>
+            </div>
             <div class="content">
                 <p>
                     <asp:Label ID="lblUserName" runat="server" Text="Username: "/>

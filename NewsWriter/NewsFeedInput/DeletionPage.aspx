@@ -30,6 +30,9 @@
                 <li><img src="Images/101.png" alt="X" /><a href="DeletionPage.aspx">Delete Article</a></li>
             </ul>
         </div>
+        <div class="response">   
+            <asp:Label ID="lblError" runat="server" Text="" Font-Bold="true" Font-Size="Large"/>
+        </div>
         <div class="content">
             <div class="howTo">
                 <p>
@@ -49,7 +52,7 @@
                 <p>
                     <asp:Label ID="lblIntro" runat="server" Text="Select an Item to Delete:" /></p>
                 <p>
-                    <asp:ListBox ID="listItems" runat="server" Height="150px" Width="200px" />
+                    <asp:ListBox ID="listItems" runat="server" Height="150px" Width="255px" />
                 </p>
                 <p>
                     <asp:Button ID="btnDelete" runat="server" Text="Delete" OnClick="btnDelete_Click" onmousedown="pressed()" onmouseup="released()" onmouseout="released()"/>

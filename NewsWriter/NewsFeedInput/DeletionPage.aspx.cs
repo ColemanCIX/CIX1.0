@@ -13,7 +13,7 @@ namespace NewsFeedInput
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            lblError.ForeColor = System.Drawing.Color.Red;
             if (!IsPostBack)
             {
                 try
@@ -23,7 +23,7 @@ namespace NewsFeedInput
                 }
                 catch (Exception error)
                 {
-                    headerTag.InnerHtml = "Coleman Universty<br />Oh No! Error: " + error.Message;
+                    lblError.Text = "Oh No! Error: " + error.Message;
                 }
             }
         }
@@ -62,19 +62,20 @@ namespace NewsFeedInput
                 }
                 else
                 {
-                    headerTag.InnerHtml = "Coleman Universty<br />That article was already deleted";
+                    lblError.Text = "That article was already deleted";
                 }
+                lblError.Text = "";
                 populateBoxes();
                 drpChannels.SelectedIndex = index;
                 PopulateList();
             }
             catch (NullReferenceException)
             {
-                headerTag.InnerHtml = "Coleman Universty<br />You need to select an article to delete";
+                lblError.Text = "You need to select an article to delete";
             }
             catch (Exception error)
             {
-                headerTag.InnerHtml = "Coleman Universty<br />Oh no! Error: " + error.Message;
+                lblError.Text = "Oh no! Error: " + error.Message;
             }
         }
 
@@ -97,7 +98,7 @@ namespace NewsFeedInput
             }
             catch (Exception error)
             {
-                headerTag.InnerHtml = "Coleman Universty<br />Oh no! Error: " + error.Message;
+                lblError.Text = "Oh no! Error: " + error.Message;
             }
         }
 

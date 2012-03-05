@@ -35,7 +35,7 @@
 .content
 {
     clear:left;
-    width: 70%;
+    width: 80%;
     border: 3px solid #FFD700;
     margin: auto;
     border-radius: 50px;
@@ -45,6 +45,20 @@
 .howTo
 {
     float:right;
+}
+
+.response
+{
+    width:80%;
+    margin:auto;
+    text-align:center;
+}
+
+.Icon
+{
+    width: 160px;
+    height: 85px;
+    float:left;
 }
 
 /*
@@ -113,6 +127,7 @@ li
     border-radius: 50px;
     width:80px;
     height:30px;
+    margin-left:180px;
     /*float:right;*/
 }
 
@@ -124,6 +139,7 @@ li
     border-radius: 50px;
     width:80px;
     height:30px;
+    margin-left:180px;
 }
 
 #lblChannelError

@@ -14,11 +14,22 @@
             var element = document.getElementById("btnSubmit");
             element.style.backgroundColor = "#3465BA";
         }
+
+        function goodBad() {
+            var element = document.getElementById("lblError");
+            if (element.text == "Congrats! You made a new article!") {
+                element.style.backgorundColor = "Green";
+            }
+            else {
+                element.style.backgorundColor = "Red";
+            }
+        }
     </script>
 </head>
 <body>
     <div class="app">
         <div class="header">
+            <!--<img src="Images/CixLogo.png" alt="Coleman Logo" class="Icon"/>-->
             <img src="Images/logo.png" alt="Coleman Logo" />
             <h1 runat="server" id="headerTag">Coleman University<br />Welcome to the CIX News Writer!</h1>
         </div>
@@ -29,6 +40,9 @@
                 <li><img src="Images/tv.png" alt="TV" /><a href="AddChannel.aspx">Add Channel</a></li>
                 <li><img src="Images/101.png" alt="X" /><a href="DeletionPage.aspx">Delete Article</a></li>
             </ul>
+        </div>
+        <div class="response">   
+            <asp:Label ID="lblError" runat="server" Text="" Font-Bold="true" Font-Size="Large"/>
         </div>
         <div class="content">
             <div class="howTo">

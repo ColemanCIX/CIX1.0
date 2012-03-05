@@ -30,6 +30,9 @@
                 <li><img src="Images/101.png" alt="X" /><a href="DeletionPage.aspx">Delete Article</a></li>
             </ul>
         </div>
+        <div class="response">   
+            <asp:Label ID="lblError" runat="server" Text="" Font-Bold="true" Font-Size="Large"/>
+        </div>
         <div class="content">
             <div class="howTo">
                 <p>

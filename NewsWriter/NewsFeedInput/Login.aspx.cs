@@ -15,12 +15,13 @@ namespace NewsFeedInput
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (IsPostBack == true)
+            lblError.ForeColor = System.Drawing.Color.Red;
+            if (IsPostBack)
             {
                 if (ValidateUser())
                     FormsAuthentication.RedirectFromLoginPage(txtUserName.Text, true);
                 else
-                    Response.Redirect("logon.aspx", true);
+                    Response.Redirect("login.aspx", true);
             }
         }
 
@@ -32,13 +33,13 @@ namespace NewsFeedInput
 
             if ((null == txtUserName.Text) || (0 == txtUserName.Text.Length) || (txtUserName.Text.Length > 15))
             {
-                headerTag.InnerHtml = "Coleman University<br />UserName Failed";
+                lblError.Text = "UserName Failed";
                 return false;
             }
 
             if ((null == txtPassword.Text) || (0 == txtPassword.Text.Length) || (txtPassword.Text.Length > 25))
             {
-                headerTag.InnerHtml = "Coleman University<br />Password Failed";
+                lblError.Text = "Password Failed";
                 return false;
             }
 
@@ -58,7 +59,7 @@ namespace NewsFeedInput
             }
             catch (Exception error)
             {
-                headerTag.InnerHtml = "Coleman University<br />" + error.Message;
+                lblError.Text = "Error: " + error.Message;
                 return false;
             }
             finally
@@ -68,7 +69,7 @@ namespace NewsFeedInput
 
             if (null == passwordLookUp)
             {
-                headerTag.InnerHtml = "Coleman University<br />No Matching User";
+                lblError.Text = "No Matching User";
                 return false;
             }
 
